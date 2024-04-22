@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.unhead {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    margin-top: 20px;
+    height: 56px;
+}
+
+.search-inp {
+    box-sizing: border-box;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+    background: rgb(250, 250, 250);
+    color: rgb(156, 156, 156);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    width: 210px;
+    height: 32px;
+    text-align: left;
+    padding: 8px 73px 8px 92px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.avatar-div {
+    display: flex;
+    gap: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.s{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    padding-top: 8px;
+    z-index: 100;
+}
+
+.divided {
+    display: none;
+}
+
+.s-img {
+    margin-left: 74px;
+}
+
+.story-block {
+    width: 616px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    margin-top: 32px;
+    margin-left: 55px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    display: flex;
+    overflow: hidden;
+}
+
+.user {
+    width: 88px;
+    height: 88px;
+}
+.user-avatar {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222; /* Полупрозрачный черный фон */
+    z-index: 9999;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #222;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .user-avatar {
+    border: 1px solid orange;
+    cursor: pointer;
+  }
+
+  .borderChanged {
+    border: none;
+  }
+
+  .imgstories {
+    width:518px;
+    height: 752px;
+  }
+
+.avtar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 54px;
+    height: 54px;
+    box-sizing: border-box;
+    background: rgb(230, 230, 230);
+    border-radius: 50%;
+}
+
+.user-name {
+    color: rgb(38, 38, 38);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 7px;
+}
+
+.post {
+    width: 616px;
+    height: 752px;
+    box-sizing: border-box;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    margin-top: 24px;
+    margin-left: 55px;
+    margin-bottom: 100px;
+}
+
+.post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar-item img{
+    width: 40px;
+    height: 40px;
+    margin: 8px 8px 8px 24px;
+    cursor: pointer;
+}
+
+.name {
+    color: rgb(38, 38, 38);
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.country {
+    color: rgb(38, 38, 38);
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.settings img{
+    width: 24px;
+    height: 24px;
+    margin: 16px 16px 16px 400px;
+    cursor: pointer;
+}
+
+.set {
+    display: none;
+}
+
+.post-img {
+    width: 614px;
+    height: 408px;
+    background: rgb(229, 229, 229);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.left {
+    display: flex;
+    gap: 16.25px;
+    margin-left: 16px;
+}
+
+.left img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.icons .left img:nth-child(2) {
+    width: 23.52px;
+    height: 23.52px;
+}
+
+.right {
+    margin-right: 17.5px;
+}
+
+.right img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.likes-count h3 {
+    color: rgb(44, 44, 44);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.com {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(44, 44, 44)
+}
+
+.nick {
+    font-weight: 600;
+    color: black;
+}
+
+.more-info {
+    color: rgb(152, 152, 152);
+    cursor: pointer;
+}
+
+.comment-count {
+    color: rgb(152, 152, 152);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.other {
+    margin-left: 16px;
+}
+
+.other-item {
+    display: flex; justify-content: space-between;
+    margin-top: 8px;
+}
+
+.other-item img {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.other-text {
+    color: rgb(44, 44, 44);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.txt {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.when-post p{
+    color: rgb(152, 152, 152);
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.when-post {
+    margin-top: 8px;
+    margin-left: 16px
+}
+
+.comment-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    margin-top: 14px;
+    padding-left: 16px;
+}
+
+.comment {
+    flex: 1;
+    height: 55px;
+    padding: 16px;
+    border: 0;
+    padding-left: 40px;
+}
+
+.smile {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.comment-button {
+    border: 0;
+    color: #0095F6;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: end;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+

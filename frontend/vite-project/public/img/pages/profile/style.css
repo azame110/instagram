@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 1200px;
+  height: 50px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.container {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  top: 500px;
+}
+.w2 {
+  display: flex;
+  justify-content: space-between;
+}
+.right-icon {
+  display: flex;
+  gap: 15px;
+  width: 30px;
+  height: 30px;
+  padding-right: 200px;
+}
+.top-side{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.jk-right {
+  display: flex;
+  gap: 15px;
+  width: 30px;
+  height: 30px;
+  padding-right: 200px; 
+}
+.follow2 {
+  display: flex;
+  width: 978px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.img2 {
+  padding-left: 30px;
+}
+.edit1 {
+  text-align: center;
+  border: 1px solid gray;
+}
+.storyhig {
+  padding-top: 20px;
+}
+#useimg{
+  height: 100px;
+  width: 100px;
+}
+.posts12 {
+  display: flex;
+  gap: 15px;
+  padding-right: 300px;
+}
+#s21 {
+  font-size: 36px;
+}
+.sss {
+  display: flex;
+  gap: 80px;
+}
+.icons2 {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  gap: 600px;
+}
+.final {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.post22 {
+  background-color: black;
+  width: 350px;
+  height: 350px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.story.clicked {
+  background-color: gray;
+}
+
+.switch-container {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+.switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

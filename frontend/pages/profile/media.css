@@ -1,0 +1,164 @@
+@media (max-width: 1200px){
+    .container {
+        width: 1200px;
+    }
+    .edit1 {
+        width: 1200px;
+    }
+    .as26 {
+        display: none;
+    }
+    .header {
+        gap: 150px;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 1024px;
+    }
+
+    header {
+    width: 1024px;    
+    }
+    .linktoMain {
+        width: 1024px;
+    }
+    .edit1 {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        width: 920px;
+    }
+    header {
+        width: 920px;
+    }
+    .as25 {
+        display: none;
+    }
+    .sss {
+        padding-left: 20px;
+    }
+    .edit1 {
+        width: 920px;
+    }
+    .linktoMain {
+        width: 920px;
+    }
+    .icons2 {
+        width: 920px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 768px;
+    }
+    .sss {
+        width: 768px;
+    }
+    header {
+        width: 768px;
+    }
+    .edit1 {
+        width: 768px;
+    }
+    .icons2 {
+        width: 768px;
+        padding-left: 250px;
+        padding-right: 150px;
+        gap: 175px;
+    }
+    .final {
+        width: 768px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        width: 420px;
+    }
+    .header {
+        justify-content: space-around;
+        gap: 0;
+    }
+    .story-block, .post {
+        margin-left: 10px;
+        width: 350px;
+    }
+    .story-block {
+        gap: 10px;
+        z-index: 100;
+        position: relative;
+        z-index: 100;
+    }
+
+    .comment-wrapper {
+        display: none;
+    }
+    .post-img {
+        width: 348px;
+    }
+    .avatar-div a:nth-child(n+3) img {
+        display: none;
+    }
+    .avatar-div a:nth-child(1) img {
+        display: none;
+    }
+
+    .avatar-div a:nth-child(2) img {
+        margin-left: 120px;
+    }
+    .nameandcountry {
+        margin-left: 40px;
+        padding-right: 200px;
+        margin-left: -120px;
+    } 
+    .name {
+        font-size: 12px;
+    }
+    .country {
+        font-size: 10px;
+        width: 100px;
+    }
+    .settings {
+        display: none;
+    }
+    .set {
+        display: block;
+        width: 24px;
+        cursor: pointer;
+        height: 24px;
+        margin-right: 8px;
+        margin-left: -180px;
+    }
+
+    .left-head {
+        width: 44px;
+        height: 24px;
+        margin-left: -20px;
+    }
+    .divided {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .post {
+        height: 832px;
+    }
+    .avatar-div {
+        margin-right: 0;
+    }
+    .item-div img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+}
